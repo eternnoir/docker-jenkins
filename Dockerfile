@@ -7,7 +7,7 @@ MAINTAINER Frank Wang "eternnoir@gmail.com"
 
 ENV JENKINS_VERSION latest
 
-RUN apt-get update && apt-get upgrade 
+RUN apt-get update && apt-get -y upgrade  && apt-get clean
 ADD http://mirrors.jenkins-ci.org/war/$JENKINS_VERSION/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
