@@ -16,4 +16,5 @@ VOLUME /jenkins
 
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
+EXPOSE 52842
 CMD [""]
