@@ -5,7 +5,7 @@
 FROM eternnoir/ubuntu-java:oracle-java8
 MAINTAINER Frank Wang "eternnoir@gmail.com"
 
-ENV JENKINS_VERSION latest
+ENV JENKINS_VERSION 2.7
 
 RUN apt-get update && apt-get -y upgrade  && apt-get clean
 ADD http://mirrors.jenkins-ci.org/war/$JENKINS_VERSION/jenkins.war /opt/jenkins.war
